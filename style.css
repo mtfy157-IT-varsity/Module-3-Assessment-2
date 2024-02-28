@@ -1,0 +1,268 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+.body-home{
+    background-image: url(images/home-port.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-meals{
+    background-image: url(images/menu-port.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*=============== HEADER ================*/
+
+.header{
+    background-color: #241428;
+    width: 100%;
+    height: 50px;
+    top: 0;
+
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.header i{
+    float: left;
+    padding: 17px 0px 0px 17px;
+    color: #cbab6b;
+}
+
+.header img{
+    width: 39px;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+/*=============== HOME PAGE ===============*/
+
+#home-logo-img{
+    width: 42%;
+    display: block;
+    margin: auto;
+}
+
+/*======= HOME PAGE MENU =======*/
+
+.home-menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #cbab6b;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid #cbab6b;
+
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/*=============== MEALS PAGE ===============*/
+
+#meals{
+    padding-top: 50px;
+}
+
+/*======= MEALS PAGE MENU =======*/
+
+.meals-list a{
+    text-decoration: none;
+}
+
+#meals-list-item{
+    border: 5px solid #cbab6b;
+    margin: 10px;
+}
+
+#meals-list-item h1{
+    font-weight: bold;
+    font-size: 20px;
+    color: #cbab6b;
+    padding-left: 10px;
+}
+
+#meals-list-item i{
+    float: right;
+    color: #cbab6b;
+    padding-right: 10px;
+}
+
+#meals-list-item p{
+    font-size: 15px;
+    font-style: italic;
+    color: #8b7449;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+/*=============== MENU PAGE ===============*/
+
+#menu{
+    padding-top: 50px;
+}
+
+/*======= MENU DETAILS =======*/
+
+.menu-details img{
+    width: 100%;
+}
+
+.menu-details h1{
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+    padding: 5px;
+}
+
+.menu-details h2{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.menu-details-info{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.menu-details-info p{
+    font-size: 13px;
+    display: inline-block;
+}
+
+.menu-details-extras label{
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.menu-details-input label{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/*=============== RECEIVED PAGE ===============*/
+
+.body-meals{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.order-received{
+    border: 5px solid #cbab6b;
+    margin: auto;
+    width: 30%;
+    display: block;
+    color: #cbab6b;
+}
+
+/*=============== FORM ===============*/
+
+.button{
+    display: block;
+    width: 50%;
+    background-color: #cbab6b;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+    padding: 8px 0;
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+}
+
+/*=============== RESPONSIVE LAYOUT ===============*/
+
+@media only screen and (min-width: 600px){
+    #meals{
+        width: 80%;
+        margin: auto;
+    }
+
+    #menu{
+        width: 80%;
+        margin: auto;
+    }
+
+    .menu-details-info p{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #meals{
+        width: 60%;
+        margin: auto;
+    }
+
+    #menu{
+        width: 60%;
+        margin: auto;
+    }
+
+    #home-logo-img{
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    #meals{
+        width: 40%;
+        margin: auto;
+    }
+
+    #menu{
+        width: 40%;
+        margin: auto;
+    }
+
+    #home-logo-img{
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    .body-home{
+        background-image: url(images/home-land.jpg);
+    }
+    
+    .body-meals{
+        background-image: url(images/menu-land.jpg);
+    }
+
+    #home-logo-img{
+        width: 22%;
+    }
+}
